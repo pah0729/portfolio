@@ -33,16 +33,17 @@
 
     .navgation .logo {
         float: left;
+        margin-top: 5px;
         margin-left: 100px;
     }
 
     .navgation .logo img {
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
     }
     .navgation h1{
         float: left;
-        margin-top: 10px;
+        margin-top: 5px;
         margin-left: 10px;
     }
 
