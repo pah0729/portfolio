@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #4b4e43;
+        }
+
+        .wrapper {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #header {
+            background-color: #b1c9df;
+            overflow: hidden;
+        }
+
+        #header-inner {
+            background-image: url("img/header-bg.png");
+            height: 400px;
+            margin-top: 30px;
+        }
+
+        .logo {
+            background-image: url("img/logo.png");
+            text-indent: -9999px;
+            width: 280px;
+            height: 50px;
+            /* display: block; */
+            position: absolute;
+        }
+
+        #move {
+            background-image: url("img/movie-scroll.png");
+            height: 110px;
+        }
+
+        #contents-list {
+            margin-top: 50px;
+        }
+
+        #contents-list>li {
+            width: 300px;
+            float: left;
+            background-color: #22233f;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            position: relative;
+            top: 30px;
+            transition: all 0.6s;
+            text-align: center;
+        }
+
+        #contents-list>li:hover {
+            transform: translateY(-25px);
+            transition: all 0.5s ease-in-out;
+            /* top: 0%; */
+            background-color: rgb(255, 59, 59);
+        }
+
+        #contents-list li h3 {
+            color: #999;
+            font-size: 25px;
+            padding: 10px 0 10px 15px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            text-align: left;
+        }
+
+        #contents-list li p {
+            color: #999;
+            padding: 10px;
+        }
+
+        #btn {
+            border-top: 1px solid #999;
+            display: inline-block;
+        }
+
+        #btn li {
+            float: left;
+        }
+
+        #btn li a {
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-image: url("img/sprite-btn.png");
+            text-indent: -9999px;
+        }
+
+        #btn a:hover {
+            background-color: #000;
+        }
+
+        #btn li.view a {
+            background-position: 0 0;
+        }
+
+        #btn li.like a {
+            background-position: -50px 0;
+        }
+
+        #btn li.share a {
+            background-position: -100px 0;
+        }
+
+        #footer-inner {
+            clear: both;
+            background-color: silver;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div id="header-inner" class="wrapper">
+            <a href="pixar.html" class="logo">Pixar</a>
+        </div>
+    </header>
+    <div id="move"></div>
+    <article id="contents" class="wrapper">
+        <ul id="contents-list">
+            <li>
+                <a href="#"><img src="img/cover01.png" alt="영화1"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="shaer"><a href="#">공유</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="img/cover02.png" alt="영화2"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="share"><a href="#">공유</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="img/cover03.png" alt="영화3"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="share"><a href="#">공유</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="img/cover04.png" alt="영화4"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="share"><a href="#">공유</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="img/cover05.png" alt="영화5"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="share"><a href="#">공유</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"><img src="img/cover06.png" alt="영화6"></a>
+                <h3>The incredible</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec
+                    lacus tincidunt, dapibus est nec, malesuada lorem.</p>
+                <ul id="btn">
+                    <li class="view"><a href="#">보기</a></li>
+                    <li class="like"><a href="#">좋아요</a></li>
+                    <li class="share"><a href="#">공유</a></li>
+                </ul>
+            </li>
+        </ul>
+    </article>
+    <footer>
+        <div class="wrapper" id="footer-inner">
+            <p>CopyRight by WEB 2018</p>
+        </div>
+    </footer>
+</body>
+
+</html>
