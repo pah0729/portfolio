@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script>
+        $(function(){
+            var duration=300;
+            var $aside=$(".page-main>aside");
+
+            $aside.find("button").on("click",function(){
+                $aside.toggleClass("open")
+                if($aside.hasClass("open")){
+                    $aside.stop().animate({left:"0px"},duration);
+                    $(".page-main>aside button img").attr("src","img/btn_close.png");
+                }else{
+                    $aside.stop().animate({left:"-200px"},duration);
+                    $(".page-main>aside button img").attr("src","img/btn_open.png");
+                }
+            })
+        });
+    </script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-size: 13px;
+            list-style: none;
+            text-decoration: none;
+            font-family: "맑은 고딕";
+        }
+
+        a {
+            color: black;
+        }
+
+        .clear {
+            clear: both;
+        }
+
+        .page-main {
+            position: relative;
+        }
+
+        .page-main>aside {
+            background: #fff;
+            width: 200px;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: -200px;
+            box-shadow: 0 2px 15px rgba(0, 0, 0, 0.5);
+        }
+
+        #logo {
+            height: 100px;
+            background-color: #590a59;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        .page-main ul li {
+            border-bottom: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .page-main ul li a {
+            font-size: 15px;
+            color: #4d5558;
+            font-weight: bold;
+            display: block;
+            padding: 10px;
+        }
+
+        .page-main ul li a:hover {
+            background-color: #d8a2e0;
+            color: #fff;
+        }
+
+        .page-main #tel {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .page-main>aside button {
+            background: rgba(0, 0, 0, 0.8);
+            width: 52px;
+            height: 132px;
+            border: none;
+            position: absolute;
+            top: 150px;
+            left: 200px;
+            margin: 0;
+            padding: 0;
+            outline: none;
+        }
+
+
+        /* header css end */
+        section article #s1 {
+            background-color: #f8deeb;
+            height: 400px;
+            background-image: url("img/main_01.png");
+            background-repeat: no-repeat;
+            background-size: 50%;
+            background-position: center bottom;
+            /* position: relative; */
+        }
+
+        #s1 #s1_1 {
+            position: absolute;
+            top: 40px;
+            left: 280px;
+        }
+
+        #s1 #s1_1 h1 {
+            font-size: 30px;
+            color: #4b4954;
+            line-height: 35px;
+        }
+
+        #s1 #s1_1 h3 {
+            font-size: 20px;
+            color: #ea96ad;
+            margin: 10px 0;
+        }
+
+        #s1 #s1_1 p {
+            font-size: 15px;
+            color: #999;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        #box1 a {
+            border: 1px solid silver;
+            width: 150px;
+            height: 30px;
+            display: inline-block;
+            text-align: center;
+            line-height: 30px;
+            color: #4b4954;
+            font-weight: bold;
+        }
+
+        #box1 a:hover {
+            background-color: #ff8479;
+            color: white;
+        }
+
+        /* #s1 css end */
+
+        section article #s2 {
+            background-color: #fff6bf;
+            height: 300px;
+            background-image: url("img/main_02.png");
+            background-repeat: no-repeat;
+            background-size: 20%;
+            background-position: 30% 50%;
+            /* position: relative; */
+        }
+
+
+        #s2 #s2_2 {
+            position: absolute;
+            top: 440px;
+            left: 55%;
+        }
+
+        #s2 #s2_2 h3 {
+            font-size: 25px;
+            color: #4b4954;
+            margin-bottom: 10px;
+        }
+
+        #s2 #s2_2 p {
+            color: #4d5558;
+            margin-bottom: 40px;
+        }
+
+        #s2 #s2_2 a {
+            border: 1px solid silver;
+            width: 150px;
+            height: 30px;
+            display: block;
+            text-align: center;
+            line-height: 30px;
+            color: #4b4954;
+            font-weight: bold;
+        }
+
+        #s2 #s2_2 a:hover {
+            background-color: #ffa963;
+            color: white;
+        }
+
+        /* #s2 css end */
+        section article #s3 {
+            height: 250px;
+            text-align: center;
+        }
+
+        section article .bax2 {
+            padding: 0 250px;
+        }
+
+        #s3 h3 {
+            font-size: 23px;
+            font-weight: normal;
+            color: #4b5558;
+            border-bottom: 1px solid #4b4954;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        #s3 h3 span {
+            font-size: 23px;
+            font-weight: bold;
+        }
+
+        #s3 ul {
+            width: 900px;
+            margin: 0 auto;
+        }
+
+        #s3 ul li {
+            float: left;
+            width: 400px;
+        }
+
+        #s3 ul li img {
+            float: left;
+            width: 100px;
+        }
+
+        #s3 ul li p {
+            width: 250px;
+            height: 100px;
+            margin-left: 110px;
+        }
+
+        #s3 ul li p span {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        #s3 .box3 a {
+            display: inline-block;
+            width: 170px;
+            height: 30px;
+            border: 1px solid #ccc;
+            text-align: center;
+            line-height: 30px;
+            color: #4b4954;
+            margin-top: 30px;
+        }
+
+        #s3 .box3 a:hover {
+            background-color: #8c9395;
+            color: #fff;
+        }
+
+        /* #s3 css end */
+        footer {
+            height: 80px;
+            background-color: #282828;
+            color: #fff;
+        }
+
+        footer p {
+            float: left;
+            margin: 20px 30px 0 200px
+        }
+
+        #logo2 {
+            height: 80px;
+            line-height: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="page-main">
+        <aside>
+            <div id="logo"><img src="img/logo.png" alt="logo" width="160"></div>
+            <ul>
+                <li><a href="#">경진대회소개</a></li>
+                <li><a href="#">경진대회접수</a></li>
+                <li><a href="#">문화데이터소개</a></li>
+                <li><a href="#">정보공유</a></li>
+                <li><a href="#">이천경진대회</a></li>
+                <li><a href="#">경진대회소식</a></li>
+                <li><a href="#">300자 이벤트</a></li>
+            </ul>
+            <div id="tel">
+                TEL. 02.3153.2878<br>
+                (평일 : 09:00-18:00)
+            </div>
+            <button><img src="img/btn_open.png" alt="#"></button>
+        </aside>
+    </header>
+    <section>
+        <article>
+            <div id="s1">
+                <div id="s1_1">
+                    <h1>문화데이터,<br>보다 나은사회로 가는 길</h1>
+                    <h3>제6회 문화데이터 활용 경진대회</h3>
+                    <p>접수기간 : 2018.05.31-08.20까지</p>
+                    <div id="box1">
+                        <a href="#">대회요강 보기</a>
+                        <a href="#">대회접수 하기</a>
+                    </div>
+                </div>
+            </div>
+            <div id="s2">
+                <div id="s2_2">
+                    <h3>문화데이터란?</h3>
+                    <p>지역축제, 인문, 문화재, 공연/전시, 도서, 체육시설, 저작권, 문화콘텐츠산업, 한글 등<br>
+                        문화와 관련한 공공데이터로 문화포털 또는 문화데이터 과장을<br>
+                        통해 통합 서비스 되고 있는 모든 문화재를 칭함.
+                    </p>
+                    <a href="#">자세히 보기</a>
+                </div>
+            </div>
+            <div id="s3">
+                <div class="box">
+                    <h3>문화 데이터 경진대회&nbsp;<span>공모주제</span></h3>
+                    <ul>
+                        <li>
+                            <img src="img/main_03_1.png" alt="로고2">
+                            <p>
+                                <span>제품개발/창업분야</span><br>
+                                예비창업자 또는 중소기업자로서 문화데이터를 활용한 우수한
+                                창업 아이템으로 구체화되거나 컨셉 시세품 구현이 된 아이템
+                            </p>
+                        </li>
+                        <li>
+                            <img src="img/main_03_2.png" alt="로고3">
+                            <p>
+                                <span>아이디어 부문</span><br>
+                                예비 창업자 또는 중쇡업자로서 문화데이터를 할용한 우수한
+                                창업 아이템으로 구체화되거나 컨셉 시제품 구현이 된 아이템
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <div class="box3"><a href="#">자세히 보기</a></div>
+                </div>
+            </div>
+        </article>
+        <div class="clear"></div>
+        <footer>
+            <p style="color: aliceblue;">서울시 마포구 월드컵로 400 문화콘텐츠센터 6층/8층 문화정보원<br>
+                E-mailzeros@daum.net Tel 02.2525.2565 (평일 : 09:00-18:00)
+            </p>
+            <div id="logo2">
+                <span>주최 :</span><img src="img/black_host.png" alt="호스트" height="30">
+                <span>주관 :</span><img src="img/black_organize.png" alt="조직" height="30">
+            </div>
+        </footer>
+    </section>
+</body>
+
+</html>
