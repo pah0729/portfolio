@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/davinesk_mobile.css">
+    <link rel="stylesheet" href="css/davinesk_tablet.css">
+    <link rel="stylesheet" href="css/davinesk_pc.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1min.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom.min.js"></script>
+    <script src="js/js.js"></script>
+</head>
+
+<body>
+    <div id="line"></div>
+    <header class="header clearfix">
+        <!-- 메인 메뉴 -->
+        <nav class="nav_sub">
+            <div class="sub_left">
+                <ul>
+                    <li><a href="#"><img src="img/icon_locator.png" alt="위치"></a></li>
+                    <li><a href="#"><img src="img/icon_search.png" alt="찾기"></a></li>
+                    <li><a href="#">
+                            <img src="img/icon_sns_facebook_off.png" alt="facebook"
+                                onmouseover="src='img/icon_sns_facebook_on.png'"
+                                onmouseout="src='img/icon_sns_facebook_off.png'" class="sns_logo facebook">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="img/icon_sns_insta_off.png" alt="insta"
+                                onmouseover="src='img/icon_sns_insta_on.png'"
+                                onmouseout="src='img/icon_sns_insta_off.png'" class="sns_logo Instagram">
+                        </a></li>
+                    <li><a href="#">
+                            <img src="img/icon_sns_youtube_off.png" alt="youtube"
+                                onmouseover="src='img/icon_sns_youtube_on.png'"
+                                onmouseout="src='img/icon_sns_youtube_off.png'" class="sns_logo youtube">
+                        </a></li>
+                </ul>
+            </div>
+            <div id="header_logo">
+                <a href="davines.html"><img src="img/logo_fixed.png" alt="logo"></a>
+            </div>
+            <div class="sub_right">
+                <ul>
+                    <li><a href="#"><img src="img/icon_login.png" alt="로그인"></a></li>
+                    <li><a href="#"><img src="img/icon_cart.png" alt="장바구니"></a></li>
+                </ul>
+            </div>
+        </nav>
+        <nav id="nav">
+            <ul>
+                <li><a href="#">다비네스 소개</a></li>
+                <li><a href="#">베스트셀러</a></li>
+                <li><a href="#">라인별 컬렉션</a></li>
+                <li><a href="#">타입별 컬렉션</a></li>
+                <li><a href="#">고민별 컬렉션</a></li>
+                <li><a href="#">이벤트</a></li>
+                <li><a href="">커뮤니티</a></li>
+            </ul>
+        </nav>
+        <!-- 모바일 메뉴 -->
+        <div class="mobile_nav  clearfix">
+            <div id="mobile_logo">
+                <a href="davines.html"><img src="img/logo_fixed.png" alt="logo"></a>
+            </div>
+            <aside>
+                <a href="#" class="hamburger-button">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+                <div class="overlay">
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="#">다비네스 소개</a></li>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">라인별 컬렉션</a></li>
+                            <li><a href="#">타입별 컬렉션</a></li>
+                            <li><a href="#">고민별 컬렉션</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="">커뮤니티</a></li>
+                        </ul>
+                    </nav>
+                    <div class="sub_left_m">
+                        <ul>
+                            <li><a href="#"><img src="img/icon_locator.png" alt="위치"></a></li>
+                            <li><a href="#"><img src="img/icon_search.png" alt="찾기"></a></li>
+                            <li><a href="#">
+                                    <img src="img/icon_sns_facebook_off.png" alt="facebook"
+                                        onmouseover="src='img/icon_sns_facebook_on.png'"
+                                        onmouseout="src='img/icon_sns_facebook_off.png'" class="sns_logo facebook">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/icon_sns_insta_off.png" alt="insta"
+                                        onmouseover="src='img/icon_sns_insta_on.png'"
+                                        onmouseout="src='img/icon_sns_insta_off.png'" class="sns_logo Instagram">
+                                </a></li>
+                            <li><a href="#">
+                                    <img src="img/icon_sns_youtube_off.png" alt="youtube"
+                                        onmouseover="src='img/icon_sns_youtube_on.png'"
+                                        onmouseout="src='img/icon_sns_youtube_off.png'" class="sns_logo youtube">
+                                </a></li>
+                            <li><a href="#"><img src="img/icon_login.png" alt="로그인"></a></li>
+                            <li><a href="#"><img src="img/icon_cart.png" alt="장바구니"></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </aside>
+        </div>
+        <!-- 메인 이미지 -->
+        <div id="show_wrapper">
+            <ul class="header_img">
+                <li><img class="slide1" src="img/main_header_1.jpg" alt="#"></li>
+                <li><img class="slide2" src="img/main_header_2.jpg" alt="#"></li>
+            </ul>
+            <p class="controls">
+                <span class="prev"><img src="img/btn_prev.png" alt="이전" onmouseover="src='img/btn_prev_on.png'"
+                        onmouseout="src='img/btn_prev.png'"></span>
+                <span class="next"><img src="img/btn_next.png" alt="이전" onmouseover="src='img/btn_next_on.png'"
+                        onmouseout="src='img/btn_next.png'"></span>
+            </p>
+        </div>
+        <!-- 태블릿 메인 이미지 -->
+        <div id="show_wrapper_tab">
+            <ul class="header_img_tab">
+                <li><img class="slide3" src="img/main_header_tablet1.png" alt="#"></li>
+                <li><img class="slide4" src="img/main_header_tablet2.png" alt="#"></li>
+            </ul>
+        </div>
+        <!-- 모바일 메인 이미지 -->
+        <div id="show_wrapper_m">
+            <ul class="header_img_m">
+                <li><img class="slide5" src="img/main_header_m1.png" alt="#"></li>
+                <li><img class="slide6" src="img/main_header_m2.png" alt="#"></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 콘텐츠 -->
+    <section>
+        <article class="contents1 clearfix">
+            <a href="#" class="click"><div class="story"></div></a>
+            <a href="#" class="click"><div class="seller"></div></a>
+        </article>
+        <article class="contents2 clearfix">
+            <a href="#" class="click"><div class="collaboration"></div></a>
+            <div class="notice">
+                <table width="360">
+                    <th colspan="2">공지사항</th>
+                    <tr>
+                        <td><a href="#">[공지사항] 설 연휴 고객센터 운영</a></td>
+                        <td><b>01-23</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">[공지사항] 설 연휴 배송공지</a></td>
+                        <td><b>01-13</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">[공지사항] 다비네스 공식물 새로운 회원 혜택</a></td>
+                        <td><b>01-02</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">[공지사항] 다비네스 오이 올린원밀크</a></td>
+                        <td><b>04-08</b></td>
+                    </tr>
+                    <tr>
+                        <td><a href="#">[공지사항] 제품 구매시 적립금 인상</a></td>
+                        <td><b>09-07</b></td>
+                    </tr>
+                </table>
+            </div>
+            <a href="#" class="click"><div class="event"></div></a>
+            <a href="#" class="click"><div class="benefits"></div></a>
+        </article>
+        <article class="contents3 clearfix">
+            <ul class="tab">
+                <li><a href="#tab1" class="selected">bastseller</a></li>
+                <li><a href="#tab2">md's pick</a></li>
+            </ul>
+            <ul class="panel">
+                <li id="tab1">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product1.jpg" alt="제품"></a>
+                            <figcaption>오이 올인원밀크<br>대용량 세트<br>₩208,000</figcaption>
+                        </li>
+                    </ul>
+                </li>
+                <li id="tab2">
+                    <ul>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                        <li>
+                            <a href="#"><img src="img/product2.jpg" alt="제품"></a>
+                            <figcaption>오이올인원밀크<br>+에너자이징세트<br>₩187,000</figcaption>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+
+        </article>
+        <article class="contents4 clearfix">
+            <h2>our products</h2>
+            <div class="slide_wrapper">
+                <ul class="slides">
+                    <li><a href="#"><img src="img/bnn_lineup01.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup02.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup03.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup04.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup01.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup02.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup03.jpg" alt="제품"></a></li>
+                    <li><a href="#"><img src="img/bnn_lineup04.jpg" alt="제품"></a></li>
+                </ul>
+            </div>
+        </article>
+    </section>
+    <footer class="footer clearfix">
+        <nav class="footer_nav clearfix">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">서비스 이용약관</a></li>
+                <li><a href="#">이용안내</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">에스크로 가입 확인</a></li>
+                <li><a href="#">사업자정보확인</a></li>
+            </ul>
+        </nav>
+        <div class="other clearfix">
+            <div class="service">
+                <h5>고객센터</h5>
+                <p>
+                    <img src="img/icon_call.png" alt=""> <b>1800-6820</b><br>
+                    <dl>
+                        <dt>평일</dt>
+                        <dd>오전09:00~오후06:00</dd>
+                        <dt>점심</dt>
+                        <dd>오전11:30~오후12:30</dd>
+                        <dt>휴무</dt>
+                        <dd>토/일/공휴일</dd>
+                    </dl>
+                </p>
+            </div>
+            <div class="footer_logo">
+                <img src="img/logo_foot.png" alt="logo">
+                <br>
+                <h4>by</h4>
+                <img src="img/logo_davines.png" alt="다비네스">
+            </div>
+            <div class="bank">
+                <h5>bank info</h5>
+                <dl>
+
+                    <dt>신한은행</dt>
+                    <dd>100-032-769105</dd>
+                    <dt>예금주</dt>
+                    <dd>(주)뷰티앤케이</dd>
+                </dl>
+                <br>
+                <p>무통장입금 시 성함은 주문자와<br>
+                    동일하게 작성해주세요.</p>
+            </div>
+        </div>
+        <div class="end clearfix">
+            <p>
+                회사명 (주)뷰티앤케이 대표 고유리, 최정우 상호명 다비네스 대표번호 1800-6820 팩스 02-830-1132 이메일 davineskr@gmail.com<br>
+                주소 08503 서울특별시 금천구 가산디지털2로 156 (가산동) 대한통운 5층 [ 호스팅 사업자 - 카페24(주) ] 사업자 등록번호 655-87-00854 통신판매번호
+                2018-서울금천-0538<br>
+                <b>COPYRIGHT 2018 Beauty&K all rights reserved.</b>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
